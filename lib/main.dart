@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:progmobkotlin2021/Pertemuan1.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'dashboard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,8 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {//kelas stage
     int? isLogin = prefs.getInt("is_Login");
     if(isLogin == 1){
       Navigator.pushReplacement(//hapus form
-        context,
-        MaterialPageRoute(builder: (context) => Pertemuan1(title: 'Flutter Demo Home Page 72190361',)),//masuk lgs di hal login
+        context,//masuk ke kelas dart?
+        MaterialPageRoute(builder: (context) => Dashboard(title: 'Dashboard 72190361 Tampil!',)),//masuk halaman lanjut pada kelas dashboard
       );
     }
   }
@@ -86,7 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {//kelas stage
                 await prefs.setInt("is_login",1);
                 Navigator.pushReplacement(//tombol back hilang di halaman masuk
                   context,
-                  MaterialPageRoute(builder: (context) => Pertemuan1(title: 'Hai 72190361! Push Berjalan',)),//Hal Login
+                  MaterialPageRoute(builder: (context) => Dashboard(title: 'Hai 72190361! Push Berjalan',)),//Hal awal masuk adalah button Login
                 );
               },
             ),

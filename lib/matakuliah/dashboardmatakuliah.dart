@@ -34,7 +34,7 @@ class _DashboardMatakuliahState extends State<DashboardMatakuliah> {
                   children: <Widget>[
                     ListTile(
                       title: Text("Pemrograman Mobile"),
-                      leading: Icon(Icons.people),
+                      leading: Icon(Icons.smartphone),
                       subtitle: Text("SL3313 - 3 SKS"),
                       trailing: PopupMenuButton(
                           itemBuilder: (_) => <PopupMenuItem<String>>[

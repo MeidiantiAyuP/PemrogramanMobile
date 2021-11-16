@@ -34,7 +34,7 @@ class _DashboardJadwalState extends State<DashboardJadwal> {
                   children: <Widget>[
                     ListTile(//isi
                       title: Text("SELASA"),//bagian atas
-                      leading: Icon(Icons.people),//taruh di depan
+                      leading: Icon(Icons.book),//taruh di depan
                       subtitle: Text("sesi 3 - 13:30 - 15:30"),//tengah bawah
                       trailing: PopupMenuButton(//taruh di belakang
                           itemBuilder: (_) => <PopupMenuItem<String>>[

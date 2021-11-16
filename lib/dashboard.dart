@@ -57,8 +57,8 @@ class _DashboardState extends State<Dashboard> {
                 },
               ),
               ListTile(
-                title: Text("Data Mhasiswa"),
-                trailing: Icon(Icons.people),
+                title: Text("Data Mahasiswa"),
+                trailing: Icon(Icons.people_alt_outlined),
                 subtitle: Text("Menu CRUD Data Mahasiswa"),
                 onTap: () {
                   Navigator.pop(context);
@@ -70,7 +70,7 @@ class _DashboardState extends State<Dashboard> {
               ),
               ListTile(
                 title: Text("Data Matakuliah"),
-                trailing: Icon(Icons.people),
+                trailing: Icon(Icons.smartphone),
                 subtitle: Text("Menu CRUD Data Matakuliah"),
                 onTap: () {
                   Navigator.pop(context);
@@ -82,7 +82,7 @@ class _DashboardState extends State<Dashboard> {
               ),
               ListTile(
                 title: Text("Data Jadwal"),
-                trailing: Icon(Icons.people),
+                trailing: Icon(Icons.book),
                 subtitle: Text("Menu CRUD Data Jadwal"),
                 onTap: () {
                   Navigator.pop(context);
